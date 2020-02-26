@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>registration2.html</title>
+	<!-- something weird to make it look better -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<!-- header-->
+	<table width="100%">
+		<tr height="10%">
+			<td width="10%"></td>
+			<td width="20%">
+				<img vspace="15" src="imgs\gocreate.png" alt="..." ></img>
+			</td>
+			<td width="50%"></td>
+			<td width="30%">
+				<a valign="top">UserName</a>
+				<img src="imgs\iconperson.png" class="mr" alt="..."></img>
+			</td>
+		</tr>
+	</table>
+	<!-- blue line-->
+	<table width="100%" bgcolor="#4e4eC3">
+		<tr height="100%">
+			<td>
+				<br>
+				<p align="center" style="font-size:200%; color:#ffffff" vspace="2%"> Welcome, <strong>UserName !</strong></p>
+				<div align="center">
+					<img id="registerline" src="imgs\register_line2.png" class="mr" alt="..." vspace="2%"></img>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<!-- content-->
+	<br>
+	<div id="fff">
+		<p align="center" style="font-size:150%; color:#606060">Fill Your Profile Details</p>
+		<div align="center">
+			<img src="imgs\user_150x150.png" class="mr" alt="..." vspace="2%"></img>
+		</div>
+		<div align="center">
+			<button type="button" style="border-radius:50px; background:#1c1978; font-size:12pt; width:16%;" class="btn btn-primary btn-lg btn-block">+ PROFILE PICTURE</button>
+		</div>
+		<!--text fields-->
+		<br>
+		<table width="100%">
+			<td width="20%"></td>
+			<td width="60%">
+				<p align="left" style="font-size:90%" color="#888888">TITLE<span style="color:#ff0000"> *</span></p>
+				<div class="input-group">
+					<input type="text" class="form-control" id="edit_Title" placeholder="e.g: Product Manager">
+				</div>
+				<br>
+				<p align="left" style="font-size:90%" color="#888888">BRIEF<span style="color:#ff0000"> *</span></p>
+				<div class="input-group">
+					<textarea class="form-control" id="edit_Brief" placeholder="16 years of experience delivering...etc"></textarea>
+				</div>
+				<!--education part-->
+				<br>
+				<div>
+					<table>
+						<tr>
+							<td width="46%">
+								<p style="font-size:120%" color="#888888">EDUCATION</p>
+							</td>
+							<td width="2%">
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_plus.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="46%">
+								<p style="font-size:120%" color="#888888">Education 1<span style="font-size:70%; color:#a0a0a0"> (parsed from your resume)</span></p>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_edit.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_delete.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="46%">
+								<p style="font-size:120%" color="#888888">Education 2<span style="font-size:70%; color:#a0a0a0"> (parsed from your resume)</span></p>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_edit.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_delete.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<!--history-->
+						<tr>
+							<td width="46%">
+								<br>
+								<p style="font-size:120%" color="#888888">EMPLOYMENT HISTORY</p>
+							</td>
+							<td width="2%">
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_plus.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="46%">
+								<p style="font-size:110%" color="#888888">Product Manager<span style="font-size:110%; color:#c0c0c0"> | </span>Company Name</p>
+								<p style="font-size:90%" color="#c0c0c0">January 2010 to Present</p>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_edit.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_delete.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="46%">
+								<p style="font-size:110%" color="#888888">Product Manager<span style="font-size:110%; color:#c0c0c0"> | </span>Company Name</p>
+								<p style="font-size:90%" color="#c0c0c0">January 2010 - January 2012</p>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_edit.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_delete.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<!--languages-->
+						<tr>
+							<td width="46%">
+								<br>
+								<p style="font-size:110%" color="#888888">LANGUAGES PROFICIENCY</p>
+							</td>
+							<td width="2%"></td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_plus.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<!--какие-то нерабочие костыли с показом кнопок на одной строке-->
+								<div style="display:inline-block;">
+									<button type="button" style="border-radius:50px; background:#cccccc; font-size:12pt; text-align:left;" class="btn btn-lg btn-block">English
+										<img src="imgs\button_close.png" class="mr" alt="..."></img>
+									</button>
+									<button type="button" style="border-radius:50px; background:#cccccc; font-size:12pt; text-align:left;" class="btn btn-lg btn-block">Japanese
+										<img src="imgs\button_close.png" class="mr" alt="..."></img>
+									</button>
+								</div>
+							</td>
+						</tr>
+						<!--skills-->
+						<tr>
+							<td width="46%">
+								<br>
+								<p style="font-size:110%" color="#888888">SKILLS</p>
+							</td>
+							<td width="2%"></td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_plus.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<!--какие-то нерабочие костыли с показом кнопок на одной строке-->
+								<div style="display:inline-block;">
+									<button type="button" style="border-radius:50px; background:#cccccc; font-size:12pt; text-align:left;" class="btn btn-lg btn-block">Skill 1
+										<img src="imgs\button_close.png" class="mr" alt="..."></img>
+									</button>
+									<button type="button" style="border-radius:50px; background:#cccccc; font-size:12pt; text-align:left;" class="btn btn-lg btn-block">Skill 2
+										<img src="imgs\button_close.png" class="mr" alt="..."></img>
+									</button>
+								</div>
+							</td>
+						</tr>
+					<!--personal info-->
+						<tr>
+							<td width="46%">
+								<br>
+								<p style="font-size:110%" color="#888888">ABOUT, ADRESS, CONTACTS</p>
+							</td>
+							<td width="2%"></td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_plus.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td width="6%">
+								<p style="font-size:90%; align:left;" color="#222222">First Name:</p>
+								<p style="font-size:90%; align:left;" color="#222222">Second Name:</p>
+							</td>
+							<td width="30%">
+								<p style="font-size:90%" color="#222222">Iskandar</p>
+								<p style="font-size:90%" color="#222222">Papriev</p>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_edit.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+							<td width="2%">
+								<div align="center">
+									<img src="imgs\button_delete.png" class="mr" alt="..."></img>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="6%">
+								<p style="font-size:90%; align:left;" color="#222222">Adress 1:</p>
+								<p style="font-size:90%; align:left;" color="#222222">Adress 2:</p>
+							</td>
+							<td width="30%">
+								<p style="font-size:90%" color="#222222">Uzbekistan, Tashkent...</p>
+								<p style="font-size:90%" color="#222222">Dubai...</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="6%">
+								<p style="font-size:90%; align:left;" color="#222222">Phone:</p>
+								<p style="font-size:90%; align:left;" color="#222222">Email:</p>
+							</td>
+							<td width="30%">
+								<p style="font-size:90%" color="#222222">23234234234</p>
+								<p style="font-size:90%" color="#222222">iskandar@fasdit.com</p>
+							</td>
+						</tr>
+					</table>
+					<!--button-->
+					<br>
+					<div align="center">
+						<button type="button" style="border-radius:50px; background:#1c1978; font-size:14pt; width:20%;" class="btn btn-primary btn-lg btn-block">Continue</button>
+						<br><br><br><br><br>
+					</div>
+				</div>
+			</td>
+			<td width="20%"></td>
+		</table>
+	</div>
+</body>
+</html>

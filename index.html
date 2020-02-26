@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>index.html</title>
+	<!-- update the version number as needed -->
+	<script defer src="/__/firebase/7.2.1/firebase-app.js"></script>
+	<!-- include only the Firebase features as you need -->
+	<script defer src="/__/firebase/7.2.1/firebase-auth.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-database.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-messaging.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-storage.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-firestore.js"></script>
+	<!-- initialize the SDK after all desired features are loaded -->
+	<script defer src="/__/firebase/init.js"></script>
+	<!-- something weird to make it look better -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<script src="script.js"></script>
+	<!--swapping page-->
+	<script>
+	function SwapPageFirst(){
+		document.getElementById('buttonCandidate').setAttribute("class", "nav-link active");
+		document.getElementById('buttonClient').setAttribute("class", "nav-link");
+	}
+	function SwapPageSecond(){
+		document.getElementById('buttonCandidate').setAttribute("class", "nav-link");
+		document.getElementById('buttonClient').setAttribute("class", "nav-link active");
+	}
+	</script>
+	<table width="100%">
+		<tr>
+			<td width="30%">left space</td>
+			<td width="40%">
+				<div align="middle">
+					<img hspace="40" vspace="40" src="imgs\gocreate.png" alt="..." ></img>
+				</div>
+				<div>
+					<ul class="nav nav-tabs mb-3">
+						<li class="nav-item">
+							<a class="nav-link active" id="buttonCandidate" href="javascript:SwapPageFirst();">Register as Candidate</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="buttonClient" href="javascript:SwapPageSecond();">Register as Client</a>
+						</li>
+					</ul>
+				</div>
+				<div class="input-group mb-3">
+					<img src="imgs\iconperson.png" class="mr" alt="...">
+					<input type="text" class="form-control" id="FirstName" placeholder="First Name">
+				</div>
+				<div class="input-group mb-3">
+					<img src="imgs\iconperson.png" class="mr" alt="...">
+					<input type="text" class="form-control"  id="LastName" placeholder="Last Name">
+				</div>
+				<div class="input-group mb-3">
+					<img src="imgs\phone.png" class="mr" alt="...">
+					<input type="text" class="form-control" id="Phone" placeholder="Phone">
+				</div>
+				<div class="input-group mb-3">
+					<img src="imgs\mail.png" class="mr" alt="...">
+					<input type="text" class="form-control" id="Email" placeholder="Email">
+				</div>
+				<div class="input-group mb-3">
+					<img src="imgs\password.png" class="mr" alt="...">
+					<input type="text" class="form-control" id="Password" placeholder="Password">
+				</div>
+				<div class="input-group mb-3">
+					<img src="imgs/password.png" class="mr" alt="...">
+					<input type="text" class="form-control" id="ConfirmPassword" placeholder="Confirm Password">
+				</div>
+				<button type="button" style="border-radius: 50px; background: #1c1978; font-size: 14pt;" class="btn btn-primary btn-lg btn-block" >Register</button>
+				<hr>
+				<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >Register with Gmail<img align="right" src="imgs\gmail.png" alt="..." ></img></button>
+				<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >Register with Facebook<img align="right" src="imgs\facebook.png" alt="..." ></img></button>
+				<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >Register with LinkedIn<img align="right" src="imgs\linkedin.png" alt="..." ></img></button>
+				<hr>
+				<a style="color:#808080">Already have an account:?</a> <a href="#">Login</a>
+			</td>
+			<td width="30%">right space</td>
+		</tr>
+	</table>
+</body>
+</html>
