@@ -4,231 +4,189 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ech styles-->
+	<link rel="stylesheet" type="text/css" href="css/echstyles.css">
+<!--ech bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<title>dashboard_4.html</title>
-	<!-- something weird to make it look better -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<!-- header-->
-	<table width="100%">
-		<tr height="10%">
-			<td width="10%"></td>
-			<td width="20%">
-				<div align="left">
-					<img vspace="15" src="imgs\gocreate.png" alt="..." ></img>
-				</div>
-			</td>
-			<td width="38%"></td>
-			<td width="5%">
-				<div align="center">
-					<img vspace="2" src="imgs\mag.png" alt="..." ></img>
-				</div>
-			</td>
-			<td width="5%">
-				<div align="center">
-					<img vspace="2" src="imgs\bell.png" alt="..." ></img>
-				</div>
-			</td>
-			<td width="12%">
-				<div align="right">
-					<a valign="top">UserName</a>
-					<img src="imgs\iconperson.png" class="mr" alt="..."></img>
-				<div>
-			</td>
-			<td width="10%"></td>
-		</tr>
-	</table>
-	<!-- blue line-->
-	<table width="100%" bgcolor="#4e4eC3">
-		<tr height="20%">
-			<td width="10%"></td>
-			<td width="40%">
-				<div align="left">
-					<br><br><br>
-					<p style="font-size:160%; color:#ffffff"> Welcome, <strong>UserName !</strong></p>
-					<br><br><br>
-				<div align="left">
-			</td>
-			<td width="25%"></td>
-			<td width="25%">
-				<p align="left" style="font-size:160%; color:#ffffff"> Earnings: <strong>$1600</strong></p>
-			</td>
-		</tr>
-	</table>
-	<!-- buttons-->
-	<br><br>
-	<table width="100%">
-		<tr height="20%">
-			<td width="10%"></td>
-			<td width="15%">
-				<div align="left">
-					<a style="font-size:97%; color:#454545" href="dashboard_1.html"><img src="imgs\bag.png" class="mr" alt="..."></img> Active Job Suggestion</p>
-				</div>
-			</td>
-			<td width="10%">
-				<div align="left">
-					<a style="font-size:97%; color:#454545" href="dashboard_2.html"><img src="imgs\bag.png" class="mr" alt="..."></img> My Job</p>
-				</div>
-			</td>
-			<td width="10%">
-				<div align="left">
-					<a style="font-size:97%; color:#454545" href="dashboard_3.html"><img src="imgs\clock.png" class="mr" alt="..."></img>Timesheet</p>
-				</div>
-			</td>
-			<td width="10%">
-				<div align="left">
-					<a style="font-size:97%; color:#454545" href="dashboard_4.html"><img src="imgs\doc.png" class="mr" alt="..."></img>Earnings</p>
-				</div>
-			</td>
-			<td width="45%"></td>
-		</tr>
-	</table>
-	<!-- content-->
-	<br>
-	<table width="100%">
-		<tr height="10%">
-			<td width="10%"></td>
-			<td width="50%">
-				<div align="left">
-					<a>Earnings</a>
-				</div>
-			</td>
-			<td width="30%">
-				<div align="right">
-					<a style="font-size:80%">Mon, December 02, 2019 - Sun, Jan 02, 2020</a>
-					<p style="font-size:80%">[Insert Calendar Here]</p>
-				</div>
-			</td>
-			<td width="10%"></td>
-		</tr>
-	</table>
-	<br>
-	<table width="100%">
-		<tr height="10%">
-			<td width="10%"></td>
-			<td width="30%">
-				<div align="left">
-					<a>Total Worked Hours</a>
-				</div>
-			</td>
-			<td width="30%">
-				<div align="left">
-					<a>Time</a>
-					<p style="color:#5040ff;font-size:120%"><strong>32 hours, 20 min</strong></p>
-				</div>
-			</td>
-			<td width="10%">
-				<div align="left">
-					<a>Earned</a>
-					<p style="color:#5040ff;font-size:120%"><strong>$1600</strong></p>
-				</div>
-			</td>
-			<td width="10%">
-				<button type="button" style="border-radius: 50px; background: #1c1978; font-size: 14pt;" class="btn btn-primary btn-lg btn-block" >
-					<a style="font-size:90%;">Withdraw</a>
-				</button>
-			</td>
-			<td width="10%"></td>
-		</tr>
-	</table>
-	<!--F-->
+<!--ech header-->
+	<div class="menu mt10">
+		<div class="inline w9"></div>
+		<div class="inline w20">
+			<img src="imgs\gocreate.png" alt="..." ></img>
+		</div>
+		<div class="inline w40"></div>
+		<div class="inline w5 ar">
+			<img vspace="2" src="imgs\mag.png" alt="..." ></img>
+		</div>
+		<div class="inline w5 ar">
+			<img vspace="2" src="imgs\bell.png" alt="..." ></img>
+		</div>
+		<div class="inline w12 ar">
+			UserName <img src="imgs\iconperson.png" class="mr" alt="..."></img>
+		</div>
+		<div class="inline w9"></div>
+	</div>
+<!--ech blue line-->
+	<div class="mw100 bgblue mt10 pt40 pb40">
+		<div class="inline w9"></div>
+		<div class="inline w40 fs160 cff">
+			Welcome, <strong>UserName !</strong>
+		</div>
+		<div class="inline w21"></div>
+		<div class="inline w19 fs160 cff ar">
+			Earnings: <strong>$1600</strong>
+		</div>
+		<div class="inline w6"></div>
+	</div>
+<!--ech buttons-->
+	<div class="menu mt20 mb10">
+		<div class="inline w9"></div>
+		<div class="inline w15 al">
+			<a class="fs97 c45" href="dashboard_1.html">
+				<img src="imgs\bag.png" class="mr" alt="..."></img>	Active Job Suggestion
+			</a>
+		</div>
+		<div class="inline w10 al">
+			<a class="fs97 c45" href="dashboard_2.html">
+				<img src="imgs\bag.png" class="mr" alt="..."></img> My Job
+			</a>
+		</div>
+		<div class="inline w10 al">
+			<a class="fs97 c45" href="dashboard_3.html">
+				<img src="imgs\clock.png" class="mr" alt="..."></img> Timesheet
+			</a>
+		</div>
+		<div class="inline w10 al">
+			<a class="fs97 c45" href="dashboard_4.html">
+				<img src="imgs\doc.png" class="mr" alt="..."></img> Earnings
+			</a>
+		</div>
+		<div class="inline w46"></div>
+	</div>
+<!--ech content header-->
+    <div class="menu mt20">
+        <div class="inline w9"></div>
+        <div class="inline w51 al">
+            Earnings
+        </div>
+        <div class="inline w30 fs 80 ar">
+            Mon, December 02, 2019 - Sun, Jan 02, 2020
+			<p><a>[Insert Calendar Here]</a></p>
+        </div>
+        <div class="inline w10"></div>
+    </div>
+<!--ech -->
+	<div class="menu mt20">
+        <div class="inline w9"></div>
+        <div class="inline w31 fs110">
+            Total Worked Hours
+        </div>
+        <div class="inline w30 al">
+            Time
+			<p style="color:#5040ff;font-size:120%"><strong>32 hours, 20 min</strong></p>
+        </div>
+        <div class="inline w10 al">
+            Earned
+			<p style="color:#5040ff;font-size:120%"><strong>$1600</strong></p>
+        </div>
+        <div class="inline w10">
+            <button type="button" style="border-radius: 50px; background: #1c1978; font-size: 14pt;" class="btn btn-primary btn-lg btn-block" >
+				<a style="font-size:90%;">Withdraw</a>
+			</button>        
+        </div>
+        <div class="inline w10"></div>
+    </div>
 	<hr width="82%" align="center">
-	<table width="100%">
-		<tr>
-			<td width="10%"></td>
-			<td width="40%">
-				<div align="left">
-					<a style="color:#202020">IT consultants | Company Name</a>
-				</div>
-			</td>
-			<td width="50%"></td>
-		</tr>
-	</table>
-	<!--F-->
-	<br>
-	<table width="100%" cellpadding="15">
-		<tr height="10%">
-			<td width="10%"></td>
-			<td width="40%">
-				Date
-			</td>
-			<td width="12%">
-				Time
-			</td>
-			<td width="12%">
-				Earned
-			</td>
-			<td width="16%">
-				Status
-			</td>
-			<td width="10%"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>
-				12 Oct, 2019 - 17 Oct, 2019
-			</td>
-			<td>
-				<a><strong>16 hours</strong></a>
-			</td>
-			<td>
-				<a><strong>$400</strong></a>
-			</td>
-			<td>
-				<a style="color:#40aa40"><strong>Ready to Withdraw</strong></a>
-			</td>
-			<td></td>
-		</tr>
-	</table>
-	<!--F-->
+<!--ech content 1-->
+	<div class="menu">
+        <div class="inline w9"></div>
+        <div class="inline w40 al">
+            IT consultants <ech class="ca0">|</ech> Company Name 
+        </div>
+        <div class="inline w51"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt20">
+        <div class="inline w9"></div>
+        <div class="inline w41">
+            Date
+        </div>
+        <div class="inline w12">
+            Time
+        </div>
+        <div class="inline w12">
+            Earned
+        </div>
+        <div class="inline w16">
+            Status
+        </div>
+        <div class="inline w10"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt20">
+        <div class="inline w9"></div>
+        <div class="inline w41">
+            12 Oct, 2019 - 17 Oct, 2019
+        </div>
+        <div class="inline w12">
+            <strong>16 hours</strong>
+        </div>
+        <div class="inline w12">
+            <strong>$800</strong>
+        </div>
+        <div class="inline w16">
+            <ech style="color:#40aa40"><strong>Ready to Withdraw</strong></ech>
+        </div>
+        <div class="inline w10"></div>
+    </div>    
+<!--ech -->
 	<hr width="82%" align="center">
-	<table width="100%">
-		<tr>
-			<td width="10%"></td>
-			<td width="40%">
-				<div align="left">
-					<a style="color:#202020">IT consultants | Company Name 2</a>
-				</div>
-			</td>
-			<td width="50%"></td>
-		</tr>
-	</table>
-	<!--F-->
-	<br>
-	<table width="100%" cellpadding="15">
-		<tr height="10%">
-			<td width="10%"></td>
-			<td width="40%">
-				Date
-			</td>
-			<td width="12%">
-				Time
-			</td>
-			<td width="12%">
-				Earned
-			</td>
-			<td width="16%">
-				Status
-			</td>
-			<td width="10%"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>
-				12 Oct, 2019 - 17 Oct, 2019
-			</td>
-			<td>
-				<a><strong>16 hours</strong></a>
-			</td>
-			<td>
-				<a><strong>$400</strong></a>
-			</td>
-			<td>
-				<a style="color:#ffbb00"><strong>Pending to Approve</strong></a>
-			</td>
-			<td></td>
-		</tr>
-	</table>
+<!--ech content 2-->
+	<div class="menu">
+        <div class="inline w9"></div>
+        <div class="inline w40 al">
+            IT consultants <ech class="ca0">|</ech> Company Name 2 
+        </div>
+        <div class="inline w51"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt20">
+        <div class="inline w9"></div>
+        <div class="inline w41">
+            Date
+        </div>
+        <div class="inline w12">
+            Time
+        </div>
+        <div class="inline w12">
+            Earned
+        </div>
+        <div class="inline w16">
+            Status
+        </div>
+        <div class="inline w10"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt20">
+        <div class="inline w9"></div>
+        <div class="inline w41">
+            12 Oct, 2019 - 17 Oct, 2019
+        </div>
+        <div class="inline w12">
+            <strong>16 hours</strong>
+        </div>
+        <div class="inline w12">
+            <strong>$800</strong>
+        </div>
+        <div class="inline w16">
+            <ech style="color:#ffbb00"><strong>Pending to Approve</strong></ech>
+        </div>
+        <div class="inline w10"></div>
+    </div>    
+<!--ech -->
 	<hr width="82%" align="center">
 </body>
 </html>

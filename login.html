@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ech bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--ech styles-->
+	<link rel="stylesheet" href="css/echstyles.css">
+	<title>login.html</title>
+</head>
+<body>
+	<script src="script.js"></script>
+<!--ech swapping page-->
+	<script>
+	function SwapPageFirst(){
+		document.getElementById('buttonCandidate').setAttribute("class", "nav-link active");
+		document.getElementById('buttonClient').setAttribute("class", "nav-link");
+	}
+	function SwapPageSecond(){
+		document.getElementById('buttonCandidate').setAttribute("class", "nav-link");
+		document.getElementById('buttonClient').setAttribute("class", "nav-link active");
+	}
+	</script>
+<!--ech content-->	
+	<div class="menu">
+		<div class="inline w30"></div>
+<!--ech mid-->
+		<div class="inline w40 ac">
+			<img hspace="40" vspace="40" src="imgs\gocreate.png" alt="..." ></img>
+			<div>
+				<ul class="nav nav-tabs mb-3">
+					<li class="nav-item">
+						<a class="nav-link active" id="buttonCandidate" href="javascript:SwapPageFirst();">Login as Candidate</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="buttonClient" href="javascript:SwapPageSecond();">Login as Client</a>
+					</li>
+				</ul>
+			</div>
+			<div class="input-group mb-3">
+				<img src="imgs\mail.png" class="mr" alt="...">
+				<input type="text" class="form-control" id="Email" placeholder="Email">
+			</div>
+			<div class="input-group mb-3">
+				<img src="imgs\password.png" class="mr" alt="...">
+				<input type="text" class="form-control" id="Password" placeholder="Password">
+			</div>
+			<button type="button" style="border-radius: 50px; font-size: 12pt; background:#1c1978;" class="btn btn-primary btn-lg btn-block "  onclick="window.location.href='registration.html'; ">
+                Login
+            </button>
+			<hr>
+			<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >
+				Login with Gmail<img align="right" src="imgs\gmail.png" alt="..." ></img>
+			</button>
+			<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >
+				Login with Facebook<img align="right" src="imgs\facebook.png" alt="..." ></img>
+			</button>
+			<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >
+				Login with LinkedIn<img align="right" src="imgs\linkedin.png" alt="..." ></img>
+			</button>
+			<hr>
+			<ech class="c80">Do not have account:?</ech> <a href="registration.html">Register</a>
+		</div>
+<!--ech right-->
+		<div class="inline w30"></div>
+	</div>
+</body>
+</html>

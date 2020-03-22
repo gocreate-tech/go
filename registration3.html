@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ech bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--ech styles-->
+	<link rel="stylesheet" href="css/echstyles.css">
 	<title>registration3.html</title>
-	<!-- something weird to make it look better -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<!-- header-->
-	<table width="100%">
-		<tr height="10%">
-			<td width="10%"></td>
-			<td width="20%">
-				<img vspace="15" src="imgs\gocreate.png" alt="..." ></img>
-			</td>
-			<td width="50%"></td>
-			<td width="30%">
-				<a valign="top">UserName</a>
+<!--ech header-->
+	<div class="menu">
+		<div class="inline w10"></div>
+		<div class="inline w20">
+			<img vspace="15" src="imgs\gocreate.png" alt="..." ></img>
+		</div>
+		<div class="inline w50"></div>
+		<div class="inline w20">
+			<div class="topicon">
+				<a>UserName</a>
 				<img src="imgs\iconperson.png" class="mr" alt="..."></img>
-			</td>
-		</tr>
-	</table>
-	<!-- blue line-->
-	<table width="100%" bgcolor="#4e4eC3">
-		<tr height="100%">
-			<td>
-				<br>
-				<p align="center" style="font-size:200%; color:#ffffff" vspace="2%"> Welcome, <strong>UserName !</strong></p>
-				<div align="center">
-					<img id="registerline" src="imgs\register_line3.png" class="mr" alt="..." vspace="2%"></img>
-				</div>
-			</td>
-		</tr>
-	</table>
-	<!-- content-->
-	<br>
-	<div id="fff" align="center">
-		<p align="center" style="font-size:150%; color:#606060">Well Done. Please Verify To Continue</p>
-		<p align="center" style="font-size:100%; color:#606060"><strong>We have sent verification email</strong></p>
-		<!-- button -->
-		<br>
-		<div align="center">
-			<button type="button" style="border-radius:50px; background:#1c1978; font-size:14pt; width:20%;" class="btn btn-primary btn-lg btn-block" onclick="window.location.href = 'dashboard_1.html';">Go To Dashboard</button>
+			</div>
+		</div>
+	</div>
+<!--ech blue line-->
+	<div class="bgblue pt20 fs200 cff ac">
+		Welcome, <strong>UserName !</strong>
+		<img id="registerline" src="imgs\register_line3.png" class="mr" alt="..." vspace="2%"></img>
+	</div>
+<!-- content-->
+	<div style="max-width:100%; padding-top:20px;">
+		<p class="fs150 c60 ac">Well Done. Please Verify To Continue</p>
+		<p class="c60 ac"><strong>We have sent verification email</strong></p>
+<!-- button -->
+		<div class="mt40 mb40" align="center">
+			<button type="button" class="btn btn-primary btn-lg btn-block; button" onclick="window.location.href='dashboard_1.html'; ">
+                Go To Dashboard
+            </button>
 		</div>
 	</div>
 </body>
