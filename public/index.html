@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ech bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--ech styles-->
+	<link rel="stylesheet" href="css/echstyles.css">
+	<title>registration.html</title>
+<!--ech firebase-->
+	<script defer src="/__/firebase/7.2.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+	<script defer src="/__/firebase/7.2.1/firebase-auth.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-database.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-messaging.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-storage.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-firestore.js"></script>
+	<script defer src="/__/firebase/init.js"></script>
+<!--ech-->
+	<script src="echscript.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+<!--ech content -->
+	<div class="menu">
+		<div class="inline w30"></div>
+<!--ech mid-->
+		<div class="inline w40 ac">
+			<img hspace="40" vspace="40" src="imgs\gocreate.png" alt="..." ></img>
+			<ul class="nav nav-tabs mb-3">
+				<li class="nav-item">
+					<a class="nav-link active" id="buttonCandidate">Register as Candidate</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="buttonClient">Register as Client</a>
+				</li>
+			</ul>
+			<div class="input-group mb-3">
+				<img src="imgs\iconperson.png" class="mr" alt="...">
+				<input type="text" class="form-control" id="firstName" autoComplete='off' placeholder="First Name">
+			</div>
+			<div class="input-group mb-3">
+				<img src="imgs\iconperson.png" class="mr" alt="...">
+				<input type="text" class="form-control"  id="lastName" autoComplete='off' placeholder="Last Name">
+			</div>
+			<div class="input-group mb-3">
+				<img src="imgs\phone.png" class="mr" alt="...">
+				<input type="text" class="form-control" id="phone" autoComplete='off' placeholder="Phone; atm not needed">
+			</div>
+			<div class="input-group mb-3">
+				<img src="imgs\mail.png" class="mr" alt="...">
+				<input type="text" class="form-control" id="email" autoComplete='off' placeholder="Email">
+			</div>
+			<div class="input-group mb-3">
+				<img src="imgs\password.png" class="mr" alt="...">
+				<input type="text" class="form-control" id="password" autoComplete='off' placeholder="Password">
+			</div>
+			<div class="input-group mb-3">
+				<img src="imgs/password.png" class="mr" alt="...">
+				<input type="text" class="form-control" id="passwordConfirm" autoComplete='off' placeholder="Confirm Password">
+			</div>
+			<button type="button" style="border-radius: 50px; background: #1c1978; font-size: 14pt;" class="btn btn-primary btn-lg btn-block" id = "registerbutton">Register</button>
+			<button type="button" style="border-radius: 50px; background: #1c1978; font-size: 14pt;" class="btn btn-primary btn-lg btn-block" id = "fakeregisterbutton">Fake Register (just let me in)</button>
+			<hr>
+			<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >Register with Gmail<img align="right" src="imgs\gmail.png" alt="..." ></img></button>
+			<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >Register with Facebook<img align="right" src="imgs\facebook.png" alt="..." ></img></button>
+			<button type="button" style="border-radius: 50px; font-size: 12pt;" class="btn btn-outline-primary btn-lg btn-block" >Register with LinkedIn<img align="right" src="imgs\linkedin.png" alt="..." ></img></button>
+			<hr>
+			<ech class="c80">Already have an account:?</ech> <a href="login.html">Login</a>
+			<hr>
+			<p class="c80" id="F">errorsField</p>
+		</div>
+<!--ech right-->
+		<div class="inline w30"></div>
+	</div>
+</body>
+</html>

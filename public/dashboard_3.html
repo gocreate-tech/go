@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ech styles-->
+	<link rel="stylesheet" type="text/css" href="css/echstyles.css">
+<!--ech bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<title>dashboard_3.html</title>
+<!--ech firebase-->
+	<script defer src="/__/firebase/7.2.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+	<script defer src="/__/firebase/7.2.1/firebase-auth.js"></script>
+	<script defer src="/__/firebase/7.2.1/firebase-firestore.js"></script>
+	<script defer src="/__/firebase/init.js"></script>
+<!--ech-->
+	<script src="echscript.js"></script>
+	<script src="dashboard.js"></script>
+</head>
+<body>
+<!--ech header-->
+	<div class="menu mt10">
+		<div class="inline w9"></div>
+		<div class="inline w20">
+			<img src="imgs\gocreate.png" alt="..." ></img>
+		</div>
+		<div class="inline w40"></div>
+		<div class="inline w5 ar">
+			<img vspace="2" src="imgs\mag.png" alt="..." ></img>
+		</div>
+		<div class="inline w5 ar">
+			<img vspace="2" src="imgs\bell.png" alt="..." ></img>
+		</div>
+		<div class="inline w12 ar">
+			<ech id="headername"></ech><img src="imgs\iconperson.png" class="mr" alt="..."></img>
+		</div>
+		<div class="inline w9"></div>
+	</div>
+<!--ech blue line-->
+	<div class="mw100 bgblue mt10 pt40 pb40">
+		<div class="inline w9"></div>
+		<div class="inline w40 fs160 cff">
+			Welcome, <strong id="bluelinename"></strong>
+		</div>
+		<div class="inline w21"></div>
+		<div class="inline w19 fs160 cff ar">
+			Earnings: <strong id="earnings">$</strong>
+		</div>
+		<div class="inline w6"></div>
+	</div>
+<!--ech buttons-->
+	<div class="menu mt20 mb10">
+		<div class="inline w9"></div>
+		<div class="inline w15 al">
+			<a class="fs97 c45" href="dashboard_1.html">
+				<img src="imgs\bag.png" class="mr" alt="..."></img>	Active Job Suggestion
+			</a>
+		</div>
+		<div class="inline w10 al">
+			<a class="fs97 c45" href="dashboard_2.html">
+				<img src="imgs\bag.png" class="mr" alt="..."></img> My Job
+			</a>
+		</div>
+		<div class="inline w10 al">
+			<a class="fs97 c45" href="dashboard_3.html">
+				<img src="imgs\clock.png" class="mr" alt="..."></img> Timesheet
+			</a>
+		</div>
+		<div class="inline w10 al">
+			<a class="fs97 c45" href="dashboard_4.html">
+				<img src="imgs\doc.png" class="mr" alt="..."></img> Earnings
+			</a>
+		</div>
+		<div class="inline w46"></div>
+	</div>
+<!--ech content header-->
+    <div class="menu mt20">
+	   <div class="inline w9"></div>
+       <div class="inline w61 al">
+			Group by: <strong>Project</strong>
+       </div>
+       <div class="inline w20">
+			<button type="button" style="border-radius: 50px; background: #1c1978; font-size:115%;" class="btn btn-primary btn-lg btn-block" >
+				+ Add Time
+			</button>
+       </div>    
+       <div class="inline w12"></div>
+    </div>
+    <hr width="82%" align="center" color="#dddddd">
+<!--ech content 1-->
+	<div class="menu">
+        <div class="inline w9"></div>
+        <div class="inline w40 al">
+            IT consultants <ech class="ca0">|</ech> Company Name 
+        </div>
+        <div class="inline w51"></div>
+    </div>
+    <hr width="82%" align="center" color="#ffffff">
+<!--ech -->
+    <div class="menu mt20">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			Date
+       </div>
+       <div class="inline w13">
+			Time
+       </div>    
+       <div class="inline w13">
+			Earned
+       </div>
+       <div class="inline w14">
+			Notes
+       </div>
+       <div class="inline w10"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt10">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			Mon, Nov 25, 2019
+       </div>
+       <div class="inline w13">
+            8 hours
+       </div>    
+       <div class="inline w13">
+            $400
+       </div>
+       <div class="inline w14">
+			Some Notes
+       </div>
+       <div class="inline w10"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt10">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			Friday, Nov 23, 2019
+       </div>
+       <div class="inline w13">
+            8 hours
+       </div>    
+       <div class="inline w13">
+            $400
+       </div>
+       <div class="inline w14">
+			Some Notes
+       </div>
+       <div class="inline w10"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt10">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			<strong>Total</strong>
+       </div>
+       <div class="inline w13">
+            <strong>16 hours</strong>
+       </div>    
+       <div class="inline w13">
+            <strong>$800 hours</strong>
+       </div>
+       <div class="inline w14"></div>
+       <div class="inline w10"></div>
+    </div>
+    <hr width="82%" align="center" color="#dddddd">
+<!--ech content 2-->
+	<div class="menu">
+        <div class="inline w9"></div>
+        <div class="inline w40 c20 al">
+            IT consultants <f class="ca0">|</f> Company Name 2
+        </div>
+        <div class="inline w51"></div>
+    </div>
+    <hr width="82%" align="center" color="#ffffff">
+<!--ech -->
+    <div class="menu mt20">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			Date
+       </div>
+       <div class="inline w13">
+			Time
+       </div>    
+       <div class="inline w13">
+			Earned
+       </div>
+       <div class="inline w14">
+			Notes
+       </div>
+       <div class="inline w10"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt10">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			Mon, Nov 25, 2019
+       </div>
+       <div class="inline w13">
+            8 hours
+       </div>    
+       <div class="inline w13">
+            $400
+       </div>
+       <div class="inline w14">
+			Some Notes
+       </div>
+       <div class="inline w10"></div>
+    </div>
+<!--ech -->
+    <div class="menu mt10">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			Friday, Nov 23, 2019
+       </div>
+       <div class="inline w13">
+            8 hours
+       </div>    
+       <div class="inline w13">
+            $400
+       </div>
+       <div class="inline w14">
+			Some Notes
+       </div>
+       <div class="inline w10"></div>
+    </div>
+    <div class="menu mt10">
+	   <div class="inline w9"></div>
+       <div class="inline w40">
+			<strong>Total</strong>
+       </div>
+       <div class="inline w13">
+            <strong>16 hours</strong>
+       </div>    
+       <div class="inline w13">
+            <strong>$800 hours</strong>
+       </div>
+       <div class="inline w14"></div>
+       <div class="inline w10"></div>
+    </div>
+	<hr width="82%" align="center">
+</body>
+</html>
