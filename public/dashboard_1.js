@@ -22,6 +22,7 @@ function addRow(row2link,row2text,row3text,row4text,row5text,row6text){
 	a.classList.add('c22')
 	a.href = row2link
 	
+	
 	var textnode = document.createTextNode(row2text)
 	
 	a.appendChild(textnode)
